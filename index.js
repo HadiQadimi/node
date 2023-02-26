@@ -4,7 +4,7 @@ const express=require('express');
 //use express function
 const app=express();
 const datajson=require('./data/data.json');
-console.log(datajson);
+//console.log(datajson);
 //support ejs extention
 app.set('view engine','ejs');
 //read css , image ,... files
@@ -22,5 +22,4 @@ app.get('/bicycle',(req,res)=>{
     });
 })
 app.listen(3000,console.log('server is running at port 3000'));
-// hadi qadimi 
 
